@@ -3,7 +3,7 @@ import { ToursService } from 'src/app/services/tours.service';
 import { ActivatedRoute } from '@angular/router';
 import { notifyService } from 'src/app/services/toastr.service';
 import { environment } from 'src/environments/environment';
-
+// import {stripe} from 'stripe'
 @Component({
   selector: 'app-tours-details',
   templateUrl: './tours-details.component.html',
@@ -16,6 +16,7 @@ export class ToursDetailsComponent implements OnInit {
   submitting = false
   imageUrl
   userUrl
+  // stripes = stripe('pk_test_bje5IILEN3uyJ3wQISPh7JrL00tpQXCyys')
   
   public user = JSON.parse(localStorage.getItem('user'))
   constructor(

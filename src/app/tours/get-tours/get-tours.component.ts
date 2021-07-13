@@ -33,6 +33,7 @@ export class GetToursComponent implements OnInit {
     }
 
   ngOnInit(): void {
+    console.log(this.inputData)
     this.toursService.getTours(this.limit, this.page)
       .subscribe((data: any) => {
         if(this.inputData) {

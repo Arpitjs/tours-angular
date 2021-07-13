@@ -29,6 +29,7 @@ export class SearchTourComponent implements OnInit {
     .subscribe((data: any) => {
       this.submitting = false
       this.results = data.searched
+      console.log(this.results)
       this.notify.showSuccess('found!!')
     }, err => {
       this.notify.showError(err)
